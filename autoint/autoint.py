@@ -24,6 +24,7 @@ class AutoInt(nn.Module):
          AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks[J].
          arXiv preprint arXiv:1810.11921, 2018.](https://arxiv.org/abs/1810.11921)
     """
+
     def __init__(self, num_embeddings, embedding_dim,
                  att_layer_num=3, att_embedding_size=8, att_head_num=2,
                  att_use_res=True, att_dropout_p=0., activation='sigmoid'):

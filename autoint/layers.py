@@ -29,6 +29,7 @@ class InteractingLayer(nn.Module):
          AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks[J].
          arXiv preprint arXiv:1810.11921, 2018.](https://arxiv.org/abs/1810.11921)
     """
+
     def __init__(self, embedding_size, att_embedding_size=8, head_num=2, use_res=True, dropout_p=0.):
         if head_num <= 0:
             raise ValueError('head_num must be a int > 0')
